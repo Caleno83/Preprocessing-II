@@ -1,14 +1,17 @@
 .home {
-
+  
   header {
     .top-container {
       padding-top: 0;
-      border-top: 2px dashed @navigation-border;
       border-bottom: 2px dashed @navigation-border;
       padding-bottom: 10px;
         .header-picture {
             margin-bottom: 18px;
         }
+      }
+      @media @mobile {
+        padding: 0 20px;
+        margin-top: -5.8px;
       }
     }
 
@@ -17,20 +20,38 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-   
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 99%;
+      margin-top: 1px;
+    }
     
     .text-content {
       width: 48%;
-      padding-right: 1%;
+      padding-right: 2%;
+      @media @mobile {
+        width: 95%;
+        margin: 25px;
+      }
+      
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        margin-left: 20px;
+       
+      }
 
       img {
         border-radius: 10px;
+        width: 90%;
+        
+        
       }
     }
   }
@@ -38,6 +59,13 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+      width: 100%;
+      margin-top:  -15px;
+      
+    }
 
     .text-content {
       padding-left: 1%;
@@ -57,6 +85,10 @@
     img {
       border-radius: 10px;
     }
+    @media @mobile {
+      width: 90%;
+      padding: 1px;  
+    }
   }
 
   .content-pick {
@@ -65,13 +97,36 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 110%;
+      
+      
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+    @media @mobile {
+      margin-left:  1px;
+      width: 73%;
+      padding: 9px;
+    }
         .btn {
-          .border-buttons(7px, 80%, 12%, 10px);
+          .border-buttons(10px, 80%, 12%, 12px);
           .design-buttons ( center, @button-bg, 1.4rem);
+          padding-bottom: 24px;
           cursor: pointer;
+          @media @mobile {
+           font-size: 1.9rem;
+           padding-top: 10px;
+           height: 40px;
+           width: 90%;
+           margin-left: -3px;
+          }
           &:hover {
               background-color: darken(teal, 10%)
           }
