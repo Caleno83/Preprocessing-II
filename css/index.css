@@ -142,6 +142,7 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+  color: #212529;
 }
 h1 {
   font-size: 4rem;
@@ -158,6 +159,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  color: #212529;
 }
 img {
   max-width: 100%;
@@ -167,6 +169,7 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  background-color: #FFFFFF;
 }
 nav {
   display: flex;
@@ -256,4 +259,21 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  padding: 7px;
+  width: 80%;
+  height: 12%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #17A2B8;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #004d4d;
+}
+.home .content-pick .destination .btn a {
+  text-decoration: none;
+  color: #FFFFFF;
 }

@@ -68,6 +68,18 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+        .btn {
+          .border-buttons(7px, 80%, 12%, 10px);
+          .design-buttons ( center, @button-bg, 1.4rem);
+          cursor: pointer;
+          &:hover {
+              background-color: darken(teal, 10%)
+          }
+          a {
+            text-decoration: none;
+            color: @white;
+          }
+        }
     }
   }
 }// home
